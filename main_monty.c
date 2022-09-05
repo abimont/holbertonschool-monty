@@ -51,6 +51,7 @@ void get_code(FILE *file, stack_t **tpstack)
 
 	while (getline(&opcode, &size, file) != -1)
 	{
+		counter++;
 		token = strtok(opcode, "\n\t\r ");
 		if (token == NULL || *token == '#')
 			continue;
@@ -62,7 +63,6 @@ void get_code(FILE *file, stack_t **tpstack)
 		}
 		else
 			get_func(token, tpstack, counter);
-		counter++;
 	}
 
 	free(opcode);

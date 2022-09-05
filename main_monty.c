@@ -51,13 +51,13 @@ void get_code(FILE *file, stack_t **tpstack)
 
 	while (getline(&opcode, &size, file) != -1)
 	{
-		token = strtok(opcode, "\n\t ");
+		token = strtok(opcode, "\n\t\r ");
 		if (token == NULL || *token == '#')
 			continue;
 
 		if (strcmp(token, "push") == 0)
 		{
-			token = strtok(NULL, "\n\t ");
+			token = strtok(NULL, "\n\t\r ");
 			push_func(token, tpstack, counter);
 		}
 		else

@@ -90,7 +90,7 @@ void push_func(char *opcode, stack_t **top_stack, unsigned int line)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", line);
+		fprintf(stderr, "L%u: usage: push integer\n", line);
 		exit(EXIT_FAILURE);
 	}
 	if (*top_stack != NULL)

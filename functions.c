@@ -19,9 +19,7 @@ void get_func(char *opcode, stack_t **cp_stack, unsigned int line)
 		{"pop", pop_func},
 		{"swap", swap_func},
 		{"add", add_func},
-		/*
-		 *{"nop", nop_func},
-		 */
+		{"nop", nop_func},
 		{NULL, NULL}
 	};
 

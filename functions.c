@@ -15,8 +15,8 @@ void get_func(char *opcode, stack_t **cp_stack, unsigned int line)
 
 	instruction_t function[] = {
 		{"pall", pall_func},
+		{"pint",  pint_func},
 		/*
-		 *{"pint",  pint_func},
 		 *{"pop", pop_func},
 		 *{"swap", swap_func},
 		 *{"add", add_func},

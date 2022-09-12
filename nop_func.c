@@ -2,6 +2,8 @@
 
 /**
  * nop_func - doesn’t do anything
+ * @stack: stack
+ * @line: line number of the command
  *
  * Return: void
  */

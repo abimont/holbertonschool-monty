@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void pint_func(stack_t **sstack, unsigned int __attribute((unused)) line)
+void pint_func(stack_t **sstack, unsigned int line)
 {
 	stack_t *current;
 

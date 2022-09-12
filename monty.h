@@ -47,5 +47,6 @@ void get_code(FILE *file, stack_t **tpstack);
 void pint_func(stack_t **sstack, unsigned int __attribute((unused)) line);
 void pop_func(stack_t **stack, unsigned int line);
 void swap_func(stack_t **stack, unsigned int line);
+void add_func(stack_t **stack, unsigned int line);
 
 #endif

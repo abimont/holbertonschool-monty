@@ -6,7 +6,8 @@
  * Return: void
  */
 
-void nop_func(stack_t __attribute__((unused)) **stack, unsigned int __attribute__((unused)) line)
+void nop_func(stack_t **stack, unsigned int line)
 {
-	printf("%s", "This doesn’t do anything");
+	(void) stack;
+	(void) line;
 }
